@@ -1,0 +1,118 @@
+/****************************************
+  Inherited Syles
+*****************************************/
+
+/*
+See this explanation for details
+https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*/
+
+html {
+    box-sizing: border-box;
+    color: #444;
+    font: 12pt 'Open Sans', Arial;
+    font-weight: 300;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    color: inherit;
+    font: inherit;
+}
+
+
+/****************************************
+  Defaults
+*****************************************/
+
+body {
+	background-image: radial-gradient(rgba(136, 139, 140, .4), 
+		rgba(136, 139, 140, .6)), 
+		url('wood.jpg');
+	background-size: cover;
+
+}
+
+/****************************************
+  Helpers
+*****************************************/
+
+
+/****************************************
+  Layout
+*****************************************/
+
+.form-content {
+	width: 375px;
+	background-color: #FFF;
+	margin: 20px auto;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.form-content > div:first-child {
+	border-radius: 10px 10px 0 0;
+}
+
+.cart-item {
+	min-height: 375px;
+	background-color: #F6F6F6;
+	background-image: url('adidas_full.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	text-align: right;
+}
+
+.cart-item > div {
+	position: absolute;
+	padding: 5px;
+	bottom: 20px;
+	right: 20px;
+}
+
+.cart-item > div > div:first-child {
+	color: #868686;
+}
+
+.cc-form {
+	text-align: left;
+	padding: 30px;
+	color: #B6B6B6;
+}
+
+.form-field {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 5px;
+}
+
+.cc-form input {
+	width: 100%;
+	border: none;
+	background-color: transparent;
+	display: block;
+}
+
+.form-content > div:last-child {
+	padding: 20px;
+	border-radius: 0 0 10px 10px;
+	background-color: #00B6D5;
+}
+
+.confirm {
+	text-decoration: none;
+	color: #EBF7FB;
+}
+
+/****************************************
+  Components
+*****************************************/
+
+
+
+
+
+
+
+
