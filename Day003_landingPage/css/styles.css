@@ -25,8 +25,7 @@ html {
   Defaults
 *****************************************/
 body {
-	/*background-color: aqua;*/
-	/*color: #fff;*/
+	background-color: #939595;
 }
 
 /****************************************
@@ -39,7 +38,7 @@ body {
 *****************************************/
 
 .page {
-	min-height: 800px;
+	/*min-height: 800px;*/
 	text-align: center;
 	background: radial-gradient(rgba(136, 139, 140, .9), 
 		rgba(136, 139, 140, .8)), 
@@ -47,11 +46,12 @@ body {
 	background-size: cover;
 	background-position: center center;
 	padding: 60px;
+
 }
 
 .page > div {
 	width: 95%;
-	margin: 0px auto;
+	margin: auto auto;
 }
 
 .primary-header {
@@ -61,7 +61,7 @@ body {
 }
 
 .page > div:first-child {
-	background: url('../images/puddles.jpg');
+	background: url('../images/puddles_sm.jpg');
 		background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
