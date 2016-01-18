@@ -1,0 +1,125 @@
+/****************************************
+  Inherited Syles
+*****************************************/
+
+/*
+See this explanation for details
+https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*/
+
+html {
+    box-sizing: border-box;
+    color: #444;
+    font: 12pt 'Open Sans', Arial;
+    font-weight: 300;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    color: inherit;
+    font: inherit;
+}
+
+/****************************************
+  Defaults
+*****************************************/
+.page {
+	background-color: #f6eb54;
+	max-width: 100%;
+	min-height: 100vh;
+	margin: 0 auto;
+}
+
+h1,
+h2 {
+	margin: 0;
+}
+
+/****************************************
+  Helpers
+*****************************************/
+
+
+/****************************************
+  Layout
+*****************************************/
+
+/* main header */
+.main-header {
+	font-weight: 700;
+	padding: 20px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	text-transform: uppercase;
+	margin-bottom: 10%;
+}
+
+.content > * {
+	margin: 50px auto;
+	width: 60%;
+}
+
+.container {
+	border: 12px solid #fff;
+	box-shadow: 1px 1px 6px #555;
+}
+
+.message {
+	background-color: #fff;
+	border: 7px solid #273442;
+	height: 250px;
+	padding: 20px;
+}
+
+.message > div {
+	color: #273442;
+	font-size: 9em;
+	text-align: center;
+	font-weight: 900;
+}
+
+.message h1 {
+	color: #273442;
+	font-size: .8em;
+	font-weight: 700;
+	text-align: center;
+	letter-spacing: 0px;
+}
+
+.graphic {
+	max-width: 27%;
+	margin: 0 7px;
+}
+
+.btn-action {
+	display: block;
+	width: 25%;
+	border-radius: 25px;
+	padding: 13px 40px;
+	color: #fff;
+	background-color: #273442;
+	border: none;
+}
+
+.btn-action:hover {
+	background-color: #06294f;
+}
+
+
+
+
+/****************************************
+  Components
+*****************************************/
+
+
